@@ -1,0 +1,41 @@
+xcode-select --install
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew cask install iterm2
+# update iterm2 settings -> colors, keep directory open new shell, keyboard shortcuts
+brew install zsh # latest version of zsh
+# set brew zsh as default shell
+brew install git
+# update .zshrc | .zshrc.{nay suffix for any app}
+brew install dropbox
+# continue to allow access to dropbox and start downloading files
+
+brew cask install spectacle
+brew cask install alfred
+# set CMD+space to launch alfred
+brew cask install firefox-developer-edition
+# Personalize the experience in firefox:
+# 	dsiable tracking
+#	choose duckgogo as the search engine instead of google...
+# 	disable any help firefox to send report and the like
+# 	install tabliss.io to get a better "new tab" experience
+# 	in a new tab, type "about:config" for advanced options
+# 		type "browser.ctrl...recentlyUsedOrder" and set to false
+# 		now, you are able to use crtl + tab to switch between firefox tabs
+brew cask install google-chrome
+# install nvm/node or brew install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm install stable
+npm install -g lite-server eslint
+brew cask install visual-studio-code
+brew install neovim
+# organize both .vimrc and .config files in $HOME
+# Make sure Plugins are up-to-date by running :PlugStatus and :PlugInstall 
+# update vscode settings
+# install vscode extensions with the following cmd
+while read line; do code --install-extension "$line";done < vscode-extensions.txt
+brew install fzf
+brew install bat
+brew install tree
+brew cask install spotify
+brew cask install notion

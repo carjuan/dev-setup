@@ -1,0 +1,11 @@
+Homebrew/terminal/zsh 
+OSX Productivity - Window Management (spectacle)/Quick Launcher(alfred)/Hyperswitch(switch task management)
+OSX Settings - Dock/Finder
+Web Browser - Extensions - AdBlock (https://github.com/gorhill/uBlock/) Privacy Badger(https://privacybadger.org/), OneTab, vimium, stylus(stylishThemes github repo) JSONViewer, Stylus, React Devtools
+Node.js - nvm
+Code Editor - vs code
+Code Editor - vs code - extensions
+Code Editor - nvim 
+Code Editor - nvim - extensions
+Dejal timeout, istats menu 6 and Flux
+Notion
