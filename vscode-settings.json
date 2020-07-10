@@ -1,63 +1,35 @@
-{
-  "workbench.iconTheme": "material-icon-theme",
-  // "workbench.colorCustomizations": {
-  //   "activityBarBadge.background": "#C6FF00",
-  //   "list.activeSelectionForeground": "#C6FF00",
-  //   "list.inactiveSelectionForeground": "#C6FF00",
-  //   "list.highlightForeground": "#C6FF00",
-  //   "scrollbarSlider.activeBackground": "#C6FF0050",
-  //   "editorSuggestWidget.highlightForeground": "#C6FF00",
-  //   "textLink.foreground": "#C6FF00",
-  //   "progressBar.background": "#C6FF00",
-  //   "pickerGroup.foreground": "#C6FF00",
-  //   "tab.activeBorder": "#C6FF00",
-  //   "notificationLink.foreground": "#C6FF00",
-  //   "statusBar.foreground": "#4b8e7b",
-  //   "activityBar.foreground": "#2ac71c"
-  // },
-  "files.autoSave": "onFocusChange",
-  "workbench.settings.editor": "json",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "window.zoomLevel": 1,
-  "remotefs.rootLabel": "${WHC} — (phplessons)",
-  "remotefs.remote": {
-    "nmd": {
-      "scheme": "ftp",
-      "host": "nmd-atc.ca",
-      "port": 21,
-      "username": "sebastien@sebastien.nmd-atc.ca",
-      "password": "sebastienNMDatc2019",
-      "rootPath": "/",
-      "connectTimeout": 10000
-    },
 
-    "mate": {
-      "scheme": "ftp",
-      "host": "matemb.ca",
-      "port": 21,
-      "username": "matemb",
-      "password": "pasS1234",
-      "rootPath": "/",
-      "connectTimeout": 10000
-    }
-  },
-  // "editor.insertSpaces": false,
-  "editor.detectIndentation": false,
-  "emmet.showSuggestionsAsSnippets": true,
-  "editor.tabSize": 2,
-  "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "smooth",
-  "editor.fontSize": 13,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontWeight": "400",
+{
+  "explorer.openEditors.visible": 0,
+  "editor.snippetSuggestions": "top",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
-  "editor.definitionLinkOpensInPeek": true,
-  "editor.unfoldOnClickAfterEndOfLine": true,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.inheritEnv": true,
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontWeight": "500",
+  "files.autoSave": "off",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.lineHeight": 0,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "markdown.preview.fontSize": 14,
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
+  "editor.definitionLinkOpensInPeek": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "workbench.startupEditor": "newUntitledFile",
   "code-runner.clearPreviousOutput": true,
   "code-runner.showExecutionMessage": false,
   "code-runner.executorMap": {
@@ -66,27 +38,63 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.singleQuote": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "prettier.jsxSingleQuote": true,
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
-  // ESLint rule to fix all error on save
-  "editor.codeActionsOnSave": { "source.fixAll": true },
-  "editor.formatOnSave": true,
-  // If using eslint, turn it off
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "eslint.alwaysShowStatus": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.multiCursorModifier": "alt",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "editor.columnSelection": false,
-  "editor.lineNumbers": "relative"
-  // VIM configurations for vscode
+
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.suggestSelection": "first",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment", "comment.block"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#c91676"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "n", "h"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "<space>"
 }
