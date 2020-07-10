@@ -6,7 +6,8 @@ brew cask install iterm2
 brew install zsh # latest version of zsh
 # set brew zsh as default shell
 brew install git
-# update .zshrc | .zshrc.{nay suffix for any app}
+# update .zshrc | .zshrc.{any suffix for any app}
+#download PURE PROMPT and Snazzy .itermcolors
 brew install dropbox
 # continue to allow access to dropbox and start downloading files
 
