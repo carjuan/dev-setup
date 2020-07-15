@@ -36,6 +36,8 @@ brew install neovim
 # install vscode extensions with the following cmd
 while read line; do code --install-extension "$line";done < vscode-extensions.txt
 brew install fzf
+brew install ranger 
+# copy the rc.conf file under ~/.config/ranger/rc.conf
 brew install bat
 brew install tree
 brew cask install spotify
